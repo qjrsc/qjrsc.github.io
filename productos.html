@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José </title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="productos.css">
+    <link rel="icon" href="favicon.ico.ico">
+</head>
+<body>
+    <h1>Mi sitio Web</h1>
+    <hr>
+    <header>
+        <div class="caja">
+            <img src="/Users/user/images/WEb/logo raul.jpeg" class="logo" alt="">
+            <nav>
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCw7ueqrUio4N0t9x06O8-yg": target="_blank"> Episodios</a></li>
+                    <li><a href="https://youtu.be/O3T6-jsw124" : target="_blank"> Episodio 5</a></li>
+                    <li><a href="index2.html" : target="_blank">Blog de mi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+<hr>
+        <div>
+            <p>Hola! Me llamo José, tengo 18 años y sí, así como lo ven<br>
+                todo es un proyecto autónomo que he hecho a lo largo de<br>
+                este tiempo, después de dejar de estudiar y aprenderlo desde cero.</p>
+        </div>
+<hr>
+        <div>
+            <p>© Copyright Jose Blog - 2023</p>
+        </div>
+    </main>
+</body>
+
+<canvas width="980" height="50"></canvas> 
+<script>
+
+ var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    pincel.fillStyle= "Black";
+    pincel.fillRect(0,0,1500,60);
+
+    function disenarCirculo(x,y,radio){
+
+    pincel.fillStyle="#13677E";
+    pincel.beginPath();
+    pincel.arc(x,y,radio,0,2*Math.PI);
+    pincel.fill();
+    }
+
+     function limpiarpantalla(){
+       pincel.clearRect(0,0,1500,60);
+     }
+
+     var  x = 0 
+         function actualizarPantalla(){
+
+            disenarCirculo(x,20,8);
+            x++;
+         }
+
+
+      setInterval(actualizarPantalla, 5);      
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+     var indentificar = prompt("Identifiquese usuario");
+      alert("Bienvenido al sistema " + indentificar);    
+ </script> 
+
+<html>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/O3T6-jsw124" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</html>
